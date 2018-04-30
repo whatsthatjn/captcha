@@ -17,6 +17,9 @@ const (
 	// Standard width and height of a captcha image.
 	StdWidth  = 240
 	StdHeight = 80
+)
+
+var (
 	// Maximum absolute skew factor of a single digit.
 	maxSkew = 0.7
 	// Number of background circles.
