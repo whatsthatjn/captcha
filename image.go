@@ -31,6 +31,14 @@ type Image struct {
 	rng       siprng
 }
 
+func SetSkewFactor(skew float64) {
+	maxSkew = skew
+}
+
+func SetBgCircleCount(count int) {
+	circleCount = count
+}
+
 // NewImage returns a new captcha image of the given width and height with the
 // given digits, where each digit must be in range 0-9.
 func NewImage(id string, digits []byte, width, height int) *Image {
